@@ -1,39 +1,19 @@
-# react-native-compass-heading
+# @react-native-oh-tpl/react-native-compass-heading
 
-React Native module for iOS & Android to receive compass heading
+本项目基于 [react-native-compass-heading](https://github.com/firofame/react-native-compass-heading)
 
-## Installation
+## 文档地址 / Documentation URL 
 
-```sh
-npm install react-native-compass-heading
-```
+[中文 / Chinese](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-cn/react-native-compass-heading.md)
 
-## Usage
+[英文 / English](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-en/react-native-compass-heading.md)
 
-```js
-import CompassHeading from 'react-native-compass-heading';
+## Codegen
 
-  React.useEffect(() => {
-    const degree_update_rate = 3;
+该库已接入 codegen，具体请查阅文档。
 
-    CompassHeading.start(degree_update_rate, ({heading, accuracy}) => {
-      console.log('CompassHeading: ', heading, accuracy);
-    });
+The library has been integrated with codegen. Please refer to the documentation for details.
 
-    return () => {
-      CompassHeading.stop();
-    };
-  }, []);
-```
+## 请悉知 / Acknowledgements
 
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+本项目基于 [The MIT License (MIT)](https://github.com/firofame/react-native-compass-heading/blob/master/LICENSE) ，请自由地享受和参与开源。

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "Compass_headingAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "Compass_headingAbility_label",
+      "value": "label"
+    }
+  ]
+}

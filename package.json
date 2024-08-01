@@ -1,6 +1,6 @@
 {
-  "name": "react-native-compass-heading",
-  "version": "1.5.0",
+  "name": "@react-native-oh-tpl/react-native-compass-heading",
+  "version": "1.5.0-0.0.1",
   "description": "Listener to device's compass information.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -10,6 +10,7 @@
   "files": [
     "src",
     "lib",
+    "harmony",
     "android",
     "ios",
     "cpp",
@@ -34,14 +35,26 @@
     "release": "release-it",
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn install && yarn example pods",
-    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build"
+    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build node_modules"
   },
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "harmony"
   ],
-  "repository": "https://github.com/firofame/react-native-compass-heading",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/react-native-oh-library/react-native-compass-heading.git" 
+  },
+  "harmony": {
+    "alias": "react-native-compass-heading",
+   "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    }
+  },
   "author": "Firoz Ahmed <firofame@gmail.com> (https://github.com/firofame)",
   "license": "MIT",
   "bugs": {
@@ -59,6 +72,7 @@
     "@types/jest": "^28.1.2",
     "@types/react": "~17.0.21",
     "@types/react-native": "0.70.0",
+    "react-native-compass-heading": "1.5.0",
     "commitlint": "^17.0.2",
     "del-cli": "^5.0.0",
     "eslint": "^8.4.1",
@@ -148,13 +162,7 @@
     "output": "lib",
     "targets": [
       "commonjs",
-      "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
+      "module"
     ]
   }
 }

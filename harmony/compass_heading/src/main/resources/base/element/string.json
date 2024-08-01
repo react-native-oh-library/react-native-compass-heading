@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "Compass_headingAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "Compass_headingAbility_label",
+      "value": "label"
+    }
+  ]
+}
